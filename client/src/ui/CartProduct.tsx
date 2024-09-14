@@ -51,7 +51,6 @@ const CartProduct = ({ product }: { product: ProductProps }) => {
                 onClick={handleRemoveProduct}
                 className="-m2 inline-flex p-2 text-gray-600 hover:text-red-600"
               >
-                button
                 <IoClose className="text-xl" />
               </button>
             </div>
