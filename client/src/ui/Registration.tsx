@@ -93,7 +93,6 @@ const Registration = () => {
                   <input
                     type="text"
                     name="firstName"
-                    aria-label="First name"
                     className="block w-full rounded-md border-0 bg-white/5 py-1.5 px-4 outline-none text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-skyText sm:text-sm sm:leading-6 mt-2"
                   />
                 </div>
@@ -102,7 +101,6 @@ const Registration = () => {
                   <input
                     type="text"
                     name="lastName"
-                    aria-label="Last name"
                     className="block w-full rounded-md border-0 bg-white/5 py-1.5 px-4 outline-none text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-skyText sm:text-sm sm:leading-6 mt-2"
                   />
                 </div>
@@ -111,7 +109,6 @@ const Registration = () => {
                   <input
                     type="email"
                     name="email"
-                    aria-label="Email address"
                     className="block w-full rounded-md border-0 bg-white/5 py-1.5 px-4 outline-none text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-skyText sm:text-sm sm:leading-6 mt-2"
                   />
                 </div>
@@ -120,7 +117,6 @@ const Registration = () => {
                   <input
                     type="password"
                     name="password"
-                    aria-label="Password"
                     className="block w-full rounded-md border-0 bg-white/5 py-1.5 px-4 outline-none text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-skyText sm:text-sm sm:leading-6 mt-2"
                   />
                 </div>
