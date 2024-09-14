@@ -5,7 +5,7 @@ import { ProductProps } from "../../type";
 import { getData } from "../lib";
 import Loading from "../ui/Loading";
 import Container from "../ui/Container";
-import _, { divide } from "lodash";
+import _ from "lodash";
 import PriceTag from "../ui/PriceTag";
 import { MdOutlineStarOutline } from "react-icons/md";
 import { FaRegEye } from "react-icons/fa";
@@ -125,10 +125,7 @@ const Product = () => {
                   {color && (
                     <p>
                       Color:{" "}
-                      <span
-                        className="font-semibold capitalize"
-                        style={{ color: color }}
-                      >
+                      <span className={`font-semibold capitalize color-span`}>
                         {color}
                       </span>
                     </p>
@@ -144,8 +141,7 @@ const Product = () => {
                         }`}
                       >
                         <div
-                          className="w-10 h-10 rounded-full cursor-pointer"
-                          style={{ backgroundColor: item }}
+                          className={`w-10 h-10 rounded-full cursor-pointer color-circle ${item}`}
                           onClick={() => setColor(item)}
                         />
                       </div>

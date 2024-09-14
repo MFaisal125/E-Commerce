@@ -5,3 +5,9 @@
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+.color-span {
+  color: var(--color); /* or a specific color value */
+}
+.color-circle {
+  background-color: var(--color);
+}
