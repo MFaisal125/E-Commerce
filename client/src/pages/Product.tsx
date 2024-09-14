@@ -5,7 +5,7 @@ import { ProductProps } from "../../type";
 import { getData } from "../lib";
 import Loading from "../ui/Loading";
 import Container from "../ui/Container";
-import _, { divide } from "lodash";
+import _ from "lodash";
 import PriceTag from "../ui/PriceTag";
 import { MdOutlineStarOutline } from "react-icons/md";
 import { FaRegEye } from "react-icons/fa";
@@ -15,7 +15,6 @@ import AddToCartBtn from "../ui/AddToCartBtn";
 import { productPayment } from "../assets";
 import ProductCard from "../ui/ProductCard";
 import CategoryFilters from "../ui/CategoryFilters";
-
 const Product = () => {
   const [productData, setProductData] = useState<ProductProps | null>(null);
   const [allProducts, setAllProducts] = useState<ProductProps[]>([]);
@@ -125,12 +124,7 @@ const Product = () => {
                   {color && (
                     <p>
                       Color:{" "}
-                      <span
-                        className="font-semibold capitalize"
-                        style={{ color: color }}
-                      >
-                        {color}
-                      </span>
+                      <span className="font-semibold capitalize">{color}</span>
                     </p>
                   )}
                   <div className="flex items-center gap-x-3">
@@ -145,7 +139,6 @@ const Product = () => {
                       >
                         <div
                           className="w-10 h-10 rounded-full cursor-pointer"
-                          style={{ backgroundColor: item }}
                           onClick={() => setColor(item)}
                         />
                       </div>
