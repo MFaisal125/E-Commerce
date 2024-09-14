@@ -125,7 +125,10 @@ const Product = () => {
                   {color && (
                     <p>
                       Color:{" "}
-                      <span className={`font-semibold capitalize color-span`}>
+                      <span
+                        className="font-semibold capitalize"
+                        style={{ color: color }}
+                      >
                         {color}
                       </span>
                     </p>
@@ -141,7 +144,8 @@ const Product = () => {
                         }`}
                       >
                         <div
-                          className={`w-10 h-10 rounded-full cursor-pointer color-circle ${item}`}
+                          className="w-10 h-10 rounded-full cursor-pointer"
+                          style={{ backgroundColor: item }}
                           onClick={() => setColor(item)}
                         />
                       </div>
